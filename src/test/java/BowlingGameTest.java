@@ -38,4 +38,13 @@ public class BowlingGameTest {
 		int actualScore = bowlingGame.getScore();
 		assertEquals(expectScore, actualScore);
 	}
+
+	@Test
+	public void Last_Round_Spare_Test() {
+		final int expectScore = 115;
+		BowlingGame bowlingGame =
+				new BowlingGame("2,3,4,5,1,7,8,2,10,4,1,2,5,2,3,7,3,8,2,4");
+		int actualScore = bowlingGame.getScore();
+		assertEquals(expectScore, actualScore);
+	}
 }
