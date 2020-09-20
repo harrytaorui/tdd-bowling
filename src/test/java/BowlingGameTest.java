@@ -20,4 +20,13 @@ public class BowlingGameTest {
 		int actualScore = bowlingGame.getScore();
 		assertEquals(expectScore,actualScore);
 	}
+
+	@Test
+	public void NO_Strike_With_Spare_Test() {
+		final int expectScore = 91;
+		BowlingGame bowlingGame =
+				new BowlingGame("2,3,4,5,1,7,8,2,2,4,1,2,5,2,3,7,9,0,2,7");
+		int actualScore = bowlingGame.getScore();
+		assertEquals(expectScore, actualScore);
+	}
 }
