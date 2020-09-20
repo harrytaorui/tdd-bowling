@@ -10,4 +10,14 @@ public class BowlingGameTest {
 		int actualScore = bowlingGame.getScore();
 		assertEquals(expectScore, actualScore);
 	}
+
+
+	@Test
+	public void Full_Strike_Test() {
+		final int expectScore = 300;
+		BowlingGame bowlingGame =
+				new BowlingGame("10,10,10,10,10,10,10,10,10,10,10,10");
+		int actualScore = bowlingGame.getScore();
+		assertEquals(expectScore,actualScore);
+	}
 }
